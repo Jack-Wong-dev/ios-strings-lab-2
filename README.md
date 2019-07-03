@@ -39,11 +39,29 @@ lines
 Given a string `testString` create a new variable called `condensedString` that has any consecutive spaces in `testString` replaced with a single space.
 
 ```swift
+//using regex
 let testString = "  How   about      thesespaces  ?  "
 //condensedString = " How about thesespaces ? "
 
 
 var condensedString = testString.replacingOccurrences(of: "[\\s]+", with: " ", options: .regularExpression, range: nil)
+print(condensedString)
+
+```
+```
+swift
+//Another Solution
+
+let testString = "  How   about      these spaces  ?  "
+var items = testString.components(separatedBy: .whitespacesAndNewlines)
+var condensedString  = ""
+
+for item in items{
+    if item == ""{
+    continue
+    }
+    condensedString.append(item + " ")
+}
 print(condensedString)
 
 ```
