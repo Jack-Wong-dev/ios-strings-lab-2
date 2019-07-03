@@ -1,4 +1,4 @@
-r# Strings Lab 2
+# Strings Lab 2
 
 Fork and clone this repo. On your fork, answer and commit the follow questions. When you are finished, submit the link to your repo on Canvas.
 
